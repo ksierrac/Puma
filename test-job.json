@@ -6,15 +6,15 @@
     "memoryPerNode": 32,
     "nodeCount": 1,
     "batchQueue": "serial",
-    "archive": false,
+    "archive": true,
     "archivePath": "",
     "inputs": {
-        "genotype_input": "agave://data.iplantcollaborative.org/ksierrac/applications/PumaDistribution/data/X_test.tped",
-		"phenotype_input": "agave://data.iplantcollaborative.org/ksierrac/applications/PumaDistribution/data/X_test.tfam"
+        "tped": "agave://data.iplantcollaborative.org/ksierrac/applications/PumaDistribution/data/X_test.tped",
+                "tfam": "agave://data.iplantcollaborative.org/ksierrac/applications/PumaDistribution/data/X_test.tfam"
     },
     "parameters":{
-        "regressionModel": "LINEAR",
-        "penaltyMethods":"LASSO",
-		"resultsName":"try1"
+        "regression": "LINEAR",
+        "penalty":"LASSO",
+                "name":"try1again"
     }
 }

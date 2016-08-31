@@ -3,19 +3,19 @@
 chmod +x ./puma/puma
 chmod +x ./puma/extract_puma_results.R
 
-geno=${genotype_input}
-pheno=${phenotype_input}
-sex=${sexOption}
-covariate=${covariate_input}
-regression=${regressionModel}
-sma=${singleMarker}
-penalty=${penaltyMethods}
-name=${resultsName}
-screen=${pScreen}
-pml=${pmlRestart}
-folder=${resultsFolder}
+geno=${tped}
+pheno=${tfam}
+sex=${sex}
+covariate=${covariates}
+regression=${regression}
+sma=${sma}
+penalty=${penalty}
+name=${name}
+screen=${screen_p_value}
+pml=${pML_restarts}
+folder=${results}
 threads=${nthreads}
-restricted=${restrictedPath}
+restricted=${restrictedPathSearch}
 
 ARGS=""
 

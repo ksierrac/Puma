@@ -6,11 +6,11 @@
 #SBATCH -A iPlant-Collabs
 #SBATCH -J test-puma
 
-genotype_input="./data/X_test.tped"
-phenotype_input="./data/X_test.tfam"
+tped="./data/X_test.tped"
+tfam="./data/X_test.tfam"
 covariate_input="./data/X_cov.txt"
-regressionModel="LINEAR"
-penaltyMethods="LASSO"
-resultsName="try1"
+regression="LINEAR"
+penalty="LASSO"
+name="try1"
 
 . ./puma_wrapper.sh
